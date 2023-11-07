@@ -1,0 +1,1085 @@
+@font-face {
+  font-family: "Gill Sans MT";
+  src: url("/public/fonts/GillSansMT.ttf") format("truetype");
+}
+
+body {
+  font-family: "Gill Sans MT";
+  --background-color: #f1f0e6;
+  --background-color-darken: #cccbc2;
+  --primary-color: #92a187;
+  --primary-color-darken: #74846c;
+  --button-primary-color-darken: #84917a;
+  --button-accept: #14a44d;
+  --button-accept-darken: #13793b;
+  --button-reject: #dc4c64;
+  --button-reject-darken: #963646;
+  --sidebar-color: #b0c1a4;
+  --sidebar-color-darken: #88957f;
+  --navbar-color: #878787;
+  --navbar-color-darken: #5f5f5f;
+  --whatsApp-color: #25d366;
+  --whatsApp-color-darken: #1da04d;
+  --fixed-matches-color: #576450;
+  background: var(--background-color);
+}
+
+.sidebar {
+  width: auto;
+  height: 6vh;
+  display: grid;
+  padding: 0.5vh;
+}
+
+.boxLogin {
+  display: relative;
+  float: left;
+  text-align: center;
+  max-height: 93vh;
+  height: auto;
+  /* width: 34%; */
+  width: auto;
+  background-color: var(--primary-color);
+  margin: 0.5vh;
+  padding: 2vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.boxLogin .boxLogoLogin {
+  width: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 1.5vh;
+  margin: 0.1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxLogin .boxLogo {
+  display: block;
+  margin: auto;
+  max-width: 20vh;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.boxLogo .logo {
+  padding: 2vh;
+  max-width: 15vh;
+  width: auto;
+}
+
+.boxLogo .title {
+  font-size: 3vh;
+}
+
+.boxLogin .boxData {
+  /* font-size: 3vh; */
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxData .boxTitle {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxData .data {
+  font-size: 2.5vh;
+  font-weight: bold;
+  padding: 1vh 0vh;
+  text-align: left;
+}
+
+.boxData .inputData {
+  font-family: "Gill Sans MT";
+  font-size: 2.3vh;
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.buttonAccept {
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--button-accept);
+  color: black;
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1.5vh;
+  font-family: "Gill Sans MT";
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+.buttonAccept:hover {
+  background: var(--button-accept-darken);
+}
+.buttonAccept:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.button {
+  font-family: "Gill Sans MT";
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 5vh rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  background: var(--button-primary-color-darken);
+}
+.button:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.buttonReject {
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--button-reject);
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  font-family: "Gill Sans MT";
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.buttonReject:hover {
+  background: var(--button-reject-darken);
+}
+.buttonReject:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.buttonWhatsapp {
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--whatsApp-color);
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.buttonWhatsapp:hover {
+  background: var(--whatsApp-color-darken);
+}
+
+.buttonWhatsapp:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.boxPicture {
+  display: relative;
+  float: left;
+  margin: 0.5vh;
+  padding: 0 0.3vh;
+  max-width: 130vh;
+  width: auto;
+  border-radius: 1.5vh;
+}
+
+.boxPicture .photo {
+  max-width: 100%;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.6vh;
+  background-color: var(--navbar-color);
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.menuIconOpen {
+  display: flex;
+  justify-content: center;
+  font-size: 2.4vh;
+  margin-left: 3.2vh;
+  margin-right: 3.2vh;
+  color: rgb(0, 0, 0);
+}
+.menuIconOpen:hover {
+  background: var(--navbar-color-darken);
+  width: 2.5vh;
+  height: 2.5vh;
+  align-items: center;
+  border-radius: 1.5vh;
+}
+.menuIconOpen:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.menuIconClose {
+  display: flex;
+  justify-content: end;
+  font-size: 2.4vh;
+  margin: 0.5vh;
+  color: #ffffff;
+}
+
+.menuItens {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 1vh;
+  padding: 1.6vh 0 2vh;
+}
+
+.boxProfile {
+  padding: 0.5vh;
+  margin: 0.5vh;
+  text-align: center;
+  height: 72vh;
+  width: auto;
+}
+.boxProfile .boxTitle {
+  font-size: 4vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color-darken);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxTitleProfile {
+  font-size: 2.8vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+.boxProfile .boxData {
+  font-size: 3vh;
+  height: 60vh;
+  /* height: auto; */
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 4vh 5vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxDataProfile {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 4vh 5vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+
+.boxData .select {
+  font-size: 2.3vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.select {
+  font-size: 2.3vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.select-container {
+  padding: 1vh 0;
+}
+
+.selectSport {
+  font-size: 2vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxProfile .button {
+  color: black;
+  font-family: "Gill Sans MT";
+  height: auto;
+  margin: 0.5vh;
+  max-width: 44.5%;
+  background-color: var(--sidebar-color);
+  justify-content: center;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background: var(--sidebar-color-darken);
+}
+
+.button:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.buttonStyle {
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1.5vh;
+  font-family: "Gill Sans MT";
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+.buttonStyle:hover {
+  background: var(--primary-color-darken);
+}
+
+.buttonStyle:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.buttonStyleEdit {
+  color: black;
+  font-size: 2.5vh;
+  font-weight: bold;
+  background-color: var(--primary-color-darken);
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  border-radius: 1.5vh;
+  font-family: "Gill Sans MT";
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.6);
+}
+.buttonStyleEdit:hover {
+  background: var(--fixed-matches-color);
+}
+.buttonStyleEdit:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.logoicon {
+  max-height: 23vh;
+  padding: 1.5vh;
+  align-items: center;
+}
+
+.logo {
+  max-width: 10vh;
+  max-height: 10vh;
+  padding: 1.5vh;
+  align-items: center;
+}
+.logo:hover {
+  background: #deebff;
+  border-radius: 1vh;
+}
+
+.boxTwoElements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1.5vh;
+  padding: 0.5vh;
+}
+
+.boxTwoElementsLogin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.boxTwoElementsConfrontation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.boxTwoElementsCityState {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+}
+
+.boxFourElements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxFourElementsMatches {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.1fr 0.8fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxFourElementsMatchesEdit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.boxTilteMatchesEdit {
+  text-align: center;
+  font-size: 3vh;
+  height: auto;
+  font-weight: bold;
+  width: auto;
+  background-color: var(--primary-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxFiveElementsMatches {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.1fr 0.8fr 0.25fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxFiveElementsHome {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr 0.7fr 0.25fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxTreeElementsHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 20.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxTreeElementsProfile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxConfrontation {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  border-radius: 1.5vh;
+  padding: 0 2.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.boxTreeElementsConfrontation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+}
+
+.boxFourElementsConfrontation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+}
+
+.boxFourElementsConfrontationMatch {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+  border-radius: 1.5vh;
+}
+
+.boxSixElements {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1fr 1fr 1fr 1fr;
+  border-radius: 1.5vh;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.cpf-mask-container {
+  width: 30vh;
+  margin: 2vh auto;
+  text-align: center;
+}
+
+.cpf-input {
+  padding: 1vh;
+  width: 100%;
+  font-size: 1.6vh;
+}
+
+.boxTitle {
+  margin: 1vh 0;
+  text-align: center;
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches {
+  padding: 0 0.5vh;
+  margin: 0.5vh;
+  text-align: center;
+  height: auto;
+}
+
+.boxMatches .boxTitle {
+  font-size: 4vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color-darken);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches .boxTitleMatches {
+  font-size: 2.8vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches .boxTitleMatchesUser {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxTitleConfrontation {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--fixed-matches-color);
+  padding: 1vh;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches .boxData {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxDataMatches {
+  font-size: 3vh;
+  height: 33.2vh;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxDataHome {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxDataMatchesEdit {
+  font-size: 2.3vh;
+  height: 33vh;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  padding: 2vh;
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches .BoxDataUser {
+  font-size: 3vh;
+  height: auto;
+  width: auto;
+  background-color: var(--fixed-matches-color);
+  margin: 1.5vh 0;
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.boxMatches .inputData {
+  font-family: "Gill Sans MT";
+  padding: 1vh 0vh;
+  justify-content: start;
+  width: 100%;
+  border: none;
+  font-size: 2.3vh;
+  height: 16vh;
+  outline: none;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.inputDataConfrontation {
+  font-family: "Gill Sans MT";
+  justify-content: start;
+  border: none;
+  font-size: 2.3vh;
+  outline: none;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.eyeInput {
+  position: absolute;
+  top: 0.5vh;
+  right: 1vh;
+  cursor: pointer;
+}
+
+.buttonBox {
+  color: black;
+  padding: 1vh 0;
+  margin: 0.5vh 21.5vh;
+  text-align: center;
+}
+
+.titlePrincipal {
+  padding: 1vh 0;
+  margin: 0.5vh 21.5vh;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.5vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color);
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.styledSelect {
+  color:black;
+  font-family: "Gill Sans MT";
+  justify-content: start;
+  width: 100%;
+  height: 3.5vh;
+  border: none;border-radius: 1vh;
+  font-size: 2.3vh;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.styledSelectHome {
+  color: black;
+  font-family: "Gill Sans MT";
+  justify-content: start;
+  width: 98%;
+  height: 3.5vh;
+  border: none;
+  font-size: 2.3vh;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.styledSelectConfrontation {
+  color: black;
+  font-family: "Gill Sans MT";
+  width: 95%;
+  height: 3.5vh;
+  border: none;
+  font-size: 2.3vh;
+  border-radius: 1vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.styledLabel {
+  padding: 1vh 0vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+  text-align: start;
+}
+
+.styledLabelMatchesEdit {
+  font-size: 2.5vh;
+  font-weight: bold;
+  text-align: start;
+}
+
+.titleSecond {
+  font-size: 3vh;
+  padding: 1vh 0;
+  margin: 1.5vh 21.5vh;
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.boxSportSelectOne {
+  width: 18vh;
+  padding: 0 0.5vh;
+}
+.boxSportSelectTwo {
+  width: 26vh;
+  padding: 0 0.5vh;
+}
+
+.modal-overlay {
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-filter {
+  display: block;
+  background: var(--background-color);
+  width: auto;
+  height: auto;
+  padding: 1.6vh;
+  border-radius: 1.6vh;
+}
+
+.modalMatchesEdit {
+  display: block;
+  background: var(--background-color);
+  width: auto;
+  height: auto;
+  margin: 0 15vh;
+  padding: 1.6vh;
+  border-radius: 1.6vh;
+}
+
+.dataFilterEdit {
+  width: 145vh;
+  font-size: 2.3vh;
+  padding: 1vh 0vh;
+  text-align: left;
+}
+
+.dataFilter {
+  width: 50vh;
+  font-size: 2.3vh;
+  padding: 1vh 0vh;
+  text-align: left;
+}
+
+.alignCenterBox {
+  text-align: center;
+  height: auto;
+  width: auto;
+  padding: 1vh 0;
+  margin: 0 21.5vh;
+}
+
+.buttonFilter {
+  color: black;
+  border: none;
+  padding: 1vh;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.3vh;
+  height: auto;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.buttonFilter:hover {
+  background: var(--primary-color-darken);
+}
+
+.buttonFilter:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.buttonClose {
+  color: black;
+  border: none;
+  height: auto;
+  width: auto;
+  background-color: var(--background-color);
+}
+
+.buttonClose:hover {
+  background: var(--background-color-darken);
+  border-radius: 1.5vh;
+}
+
+.buttonClose:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.backgroundFixedMatches {
+  text-align: center;
+  margin: 0.5vh 21.5vh;
+  height: auto;
+  width: auto;
+}
+
+.backgroundFixedMatches .boxFixedMatches {
+  padding: 0.5vh;
+  height: auto;
+  width: auto;
+  background-color: var(--primary-color-darken);
+  border-radius: 1.5vh;
+}
+
+.titleFixed {
+  font-size: 3vh;
+  padding: 1vh 0;
+  margin: 1.5vh 21.5vh;
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-color: var(--fixed-matches-color);
+  border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+}
+
+.boxFiveElementsHomeFixed {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr 0.7fr 0.25fr;
+  border-radius: 1.5vh;
+  background-color: var(--fixed-matches-color);
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  padding: 0.5vh;
+  margin: 0.5vh 21.5vh;
+}
+
+.loader {
+  border: 0.5vh solid var(--background-color-darken);
+  border-top: 0.5vh solid var(--primary-color-darken);
+  border-radius: 50%;
+  width: 3vh;
+  height: 3vh;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 3vh;
+}
+
+.divCentralizada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1vh;
+}
+
+.divDireita {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 1vh;
+}
+
+.buttonCloseFixed {
+  color: black;
+  border: none;
+  height: auto;
+  width: auto;
+  background-color: var(--fixed-matches-color);
+}
+
+.buttonCloseFixed:hover {
+  background: var(--background-color-darken);
+  border-radius: 1.5vh;
+}
+
+.buttonCloseFixed:active {
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 1);
+}
+
+.imageProfile {
+  border: 0;
+  border-radius: 10vh;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 17vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redText {
+  color: red;
+}
+
+.fixedUser {
+  background-color: var(--fixed-matches-color);
+}
+
+.custom-toast-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8vh 1.6vh;
+  border-radius: 0.4vh;
+  cursor: pointer;
+  font-size: 2.3vh;
+  display: block;
+  margin: 0 auto;
+}
+.custom-toast-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-toast-button-accept {
+  background-color: var(--button-accept);
+  color: #fff;
+  border: none;
+  padding: 0.8vh 1.6vh;
+  border-radius: 0.4vh;
+  cursor: pointer;
+  font-size: 2.3vh;
+  display: block;
+  margin: 0.25vh;
+}
+
+.custom-toast-button-accept:hover {
+  background-color: var(--button-accept-darken);
+}
+
+.custom-toast-button-reject {
+  background-color: var(--button-reject);
+  color: #fff;
+  border: none;
+  padding: 0.8vh 1.6vh;
+  border-radius: 0.4vh;
+  cursor: pointer;
+  font-size: 2.3vh;
+  display: block;
+  margin: 0.25vh;
+}
+
+.custom-toast-button-reject:hover {
+  background-color: var(--button-reject-darken);
+}
+
+.paragraph {
+  text-align: center;
+  font-family: "Gill Sans MT";
+  font-size: 2.5vh;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 1vh 0vh;
+  color: rgb(0, 0, 0);
+}
+
+.paragraph:hover {
+  color: rgb(43, 43, 43);
+}
+
+.paragraph:active {
+  text-shadow: 0 0 0.1vh rgb(141, 141, 141);
+}
