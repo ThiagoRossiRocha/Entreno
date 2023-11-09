@@ -1,5 +1,6 @@
 # Entreno
 ### Website para encontrar parceiros para praticar esportes de raquete.
+<img src="/github/apresentacao-entreno.png">
 Sistema web para auxiliar a comunidade de esportistas com um foco maior nos esportes de raquetes. A aplicação foi desenvolvida utilizando TypeScript e Node.js para o back-end e React com Typescript para o front-end e MongoDb para o banco de dado. Com isso, o objetivo principal do sistema é simplificar as interações entre praticantes, permitindo que eles encontrem novas pessoas com quem possam praticar esportes, promovendo a criação de novas conexões e experiências.
 
 # Modelo de dados
